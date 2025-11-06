@@ -2,8 +2,9 @@
 @section('content')
     @include('Template::sections.banner')
     @if (@$sections->secs != null)
+
         @foreach (json_decode($sections->secs) as $sec)
-            @include($activeTemplate . 'sections.' . $sec)
+             @include($activeTemplate . 'sections.' . $sec)
         @endforeach
     @endif
 @endsection

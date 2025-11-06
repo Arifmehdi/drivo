@@ -31,13 +31,13 @@
                         @endforeach
                     </ul>
                     <div class="app-content__buttons">
-                        <a href="{{ @$mobileAppContent->button_one_url }}" class="btn btn--base wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.7s">
+                        <a href="{{ @$mobileAppContent->button_one_url }}" class="btn btn--base neon wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.7s">
                             <span class="svg-icon">
                                 @php echo @$mobileAppContent->button_one_icon @endphp
                             </span>
                             <span class="text">{{ __(@$mobileAppContent->button_one_text) }}</span>
                         </a>
-                        <a href="{{ @$mobileAppContent->button_two_url }}" class="btn btn--base-two wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.7s">
+                        <a href="{{ @$mobileAppContent->button_two_url }}" class="btn btn--base-two neon-two wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.7s">
                             <span class="svg-icon">
                                 @php echo @$mobileAppContent->button_two_icon @endphp
                             </span>
