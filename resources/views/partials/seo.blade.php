@@ -6,7 +6,8 @@
     <link rel="shortcut icon" href="{{ siteFavicon() }}" type="image/x-icon">
 
     {{--<!-- Apple Stuff -->--}}
-    <link rel="apple-touch-icon" href="{{ siteLogo() }}">
+    {{--<link rel="apple-touch-icon" href="{{ siteLogo() }}">--}}
+    <link rel="apple-touch-icon" href="https://dri-vo.com/assets/images/logo_icon/logo.png">
     <meta name="mobile-web-app-capable" content="yes">
 
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -14,12 +15,14 @@
     {{--<!-- Google / Search Engine Tags -->--}}
     <meta itemprop="name" content="{{ gs()->siteName($pageTitle) }}">
     <meta itemprop="description" content="{{ @$seoContents->description ?? $seo->description }}">
-    <meta itemprop="image" content="{{ $seoImage ?? getImage(getFilePath('seo') .'/'. $seo->image) }}">
+    {{--<meta itemprop="image" content="{{ $seoImage ?? getImage(getFilePath('seo') .'/'. $seo->image) }}">--}}
+    <meta itemprop="image" content="https://dri-vo.com/assets/images/logo_icon/logo.png">
     {{--<!-- Facebook Meta Tags -->--}}
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ @$seoContents->social_title ?? $seo->social_title }}">
     <meta property="og:description" content="{{ @$seoContents->social_description ?? $seo->social_description }}">
-    <meta property="og:image" content="{{ $seoImage ?? getImage(getFilePath('seo') .'/'. $seo->image) }}">
+    {{--<meta property="og:image" content="{{ $seoImage ?? getImage(getFilePath('seo') .'/'. $seo->image) }}">--}}
+    <meta property="og:image" content="https://dri-vo.com/assets/images/logo_icon/logo.png">
     <meta property="og:image:type" content="image/{{ pathinfo(getImage(getFilePath('seo')) .'/'. $seo->image)['extension'] }}">
     @php $socialImageSize = explode('x', getFileSize('seo')) @endphp
     <meta property="og:image:width" content="{{ $socialImageSize[0] }}">
